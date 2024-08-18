@@ -39,7 +39,7 @@ async function GenreDropdown() {
         <DropdownMenuSeparator />
         {data.genres.map((genre) => (
           <DropdownMenuItem className="cursor-pointer" key={genre.id}>
-            <Link href={`/genre/${genre.id}?genre=${genre.name}`}>
+            <Link href={`/genre/${genre.id}/genre=${genre.name}`}>
               {genre.name}
             </Link>
           </DropdownMenuItem>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ThemeToggler } from "./ThemeToggler";
 import SearchInput from "./SearchInput";
+import GenreDropdown from "./GenreDropdown";
 
 const Header = () => {
   return (
@@ -17,6 +18,7 @@ const Header = () => {
       </Link>
 
       <div className="flex space-x-2 gap-2">
+        <GenreDropdown />
         <SearchInput />
         <ThemeToggler />
       </div>
